@@ -1,5 +1,4 @@
-from collections import defaultdict
-
+import time
 
 def read_input(filename):
     list1 = []
@@ -20,4 +19,6 @@ def main():
     answer2 = sum([int(x) * list2.count(x) for x in list1])
     print(f"part 2: {answer2}")
 
+start_time = time.time()
 main()
+print("--- %s seconds ---" % (time.time() - start_time))
